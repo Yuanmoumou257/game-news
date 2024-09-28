@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏资讯与注册页面</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 自定义样式 -->
+</head>
+<body>
+
+    <header>
+        <h1>游戏资讯</h1>
+        <nav>
+            <ul>
+                <li><a href="#headlines">头条资讯</a></li>
+                <li><a href="#search">查找资讯</a></li>
+                <li><a href="#messages">留言交友</a></li>
+                <li><a href="#registration">用户注册</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="headlines">
+            <h2>头条资讯</h2>
+            <ul id="headline-list">
+                <li>炉石传说国服回归，激动人心的时刻来了！</li>
+                <li>最新更新：全新卡牌和精彩活动等你来体验！</li>
+                <li>关注炉石传说的最新动态，点击下面的链接获取更多信息：</li>
+            </ul>
+            <a href="https://playhearthstone.com/" target="_blank">前往炉石传说官网</a>
+        </section>
+
+        <section id="search">
+            <h2>查找游戏资讯</h2>
+            <input type="text" id="search-input" placeholder="输入游戏名称...">
+            <button id="search-button">搜索</button>
+            <div id="search-results"></div>
+        </section>
+
+        <section id="messages">
+            <h2>留言交友</h2>
+            <textarea id="message-input" placeholder="输入你的留言..."></textarea>
+            <button id="submit-button">提交留言</button>
+            <ul id="message-list"></ul>
+        </section>
+
+        <section id="registration">
+            <h2>用户注册</h2>
+            <form id="registration-form">
+                <label for="username">用户名:</label>
+                <input type="text" id="username" name="username" required><br><br>
+
+                <label for="email">邮箱:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">密码:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <button type="submit">注册</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 游戏资讯网</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- 引入 JavaScript 文件 -->
+</body>
+</html>
